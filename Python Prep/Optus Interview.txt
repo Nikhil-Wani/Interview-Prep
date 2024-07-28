@@ -1,0 +1,93 @@
+>>Tell me something about yourself:
+
+Hi I'm Nikhil Pramod Wani, I'm from Mumbai
+I have more 2 years of experience in cyient as software engineer 
+working with Python, Django, GIS, Geodatabse and AWS
+
+In 2 years i've worked on multiple projects,
+my roles where to develop python code, create python tool and publish it to arcgis server.
+creating webmaps and dashboard applications
+and also responsible for code reviews, documentations and client support.
+
+if i talked about my education
+i've done post graduate diploma in advance computing from cdac hyd.
+i've done my bacherlors degree in electronics and telecommunication from mumbai university
+and i've done my python training from Aptech computer educations.
+
+BackIn college i published a paper on Intelligent safety driving vechicle(basically a self driving car using python)
+in International Journal of Advance Research, Ideas and Innovations in Technology (IJARIIT).
+
+and my Hobbies are travelling, Reading.
+
+
+
+>> Flaten list i/p [[1],[1,3,2],[2]]  --> o/p [1,1,3,2,2]
+
+>> Coin Change problem
+
+>> Generators
+
+A generator is a special type of function which does not return a single value, 
+instead, it returns an iterator object with a sequence of values. 
+In a generator function, a yield statement is used rather than a return statement. 
+The following is a simple generator function.
+
+Example: Generator Function Copy
+def mygenerator():
+    print('First item')
+    yield 10
+
+    print('Second item')
+    yield 20
+
+    print('Last item')
+    yield 30
+
+In the above example, the mygenerator() function is a generator function. 
+It uses yield instead of return keyword. So, this will return the value against the yield keyword each time it is called.
+However, you need to create an iterator for this function, as shown below.
+
+Example: next() Copy
+---gen = mygenerator() 
+--- next(gen) 
+First item 
+10                      
+--- next(gen) 
+Second item 
+20                      
+--- next(gen) 
+Last item 
+30         
+             
+The generator function cannot include the return keyword.
+If you include it, then it will terminate the function. 
+The difference between yield and return is that yield returns a value and pauses the execution while maintaining the internal states,
+whereas the return statement returns a value and terminates the execution of the function.
+
+>> Iterators :
+
+Iterator in Python is an object that is used to iterate over iterable objects like lists, tuples, dicts, and sets.
+The iterator object is initialized using the iter() method. It uses the next() method for iteration.
+
+__iter__(): The iter() method is called for the initialization of an iterator. This returns an iterator object
+__next__(): The next method returns the next value for the iterable. 
+When we use a for loop to traverse any iterable object, internally it uses the iter() method to get an iterator object,
+which further uses the next() method to iterate over.This method raises a StopIteration to signal the end of the iteration.
+
+Python iter() Example
+
+string = "GFG"
+ch_iterator = iter(string)
+ 
+print(next(ch_iterator))
+print(next(ch_iterator))
+print(next(ch_iterator))
+Output : 
+
+G
+F
+G
+
+iterable and iterator are different:
+The main difference between them is, iterable cannot save the state of the iteration, 
+but whereas in iterators the state of the current iteration gets saved.
